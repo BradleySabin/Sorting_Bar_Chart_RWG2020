@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: A chart transition with controlled duration (labels, too!)</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+		<style type="text/css">
+			p {
+				font-family: Helvetica, sans-serif;
+				font-size: 15px;
+				color: #56595d;
+				text-align: center;
+			}
+
+			h2 {
+				font-family: Helvetica, sans-serif;
+				font-size: 15px;
+				color: #56595d;
+				text-align: center;
+			}
+
+			.axis {
+	            font-size: 14px;
+				color: #57595D;
+				font-family: arial;
+	        }
+        
+	    	.axis path,
+	        .axis line {
+	            fill: none;
+	            display: none;
+	        }
+
+	        #myChart {
+				svg{
+					align-content: center;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<h2>For every dollar a white man makes, how much more or less (+/-) does a person of a different gender or race make in a given age range? </h2>
+
+		<div id = "dropdownselector" style = "margin-left: 35%; margin-bottom: 2%; margin-top: 2%; font-family: arial; font-size: 14px; color: #57595D;" >
+		    <label>Select an Age Range:  
+			    <select id="d3-dropdown" style = "font-family: arial; font-size: 14px; color: #57595D;">
+				  <option value="Twenty">10 to 29</option>
+				  <option value="Thirty">30 to 44</option>
+				  <option value="Fourty">45+</option>
+				</select>
+		    </label>
+		</div>
+
+
+		<div id="myChart"
+			 style="text-align:center;"> 
+		</div>
+			
+		<script type="text/javascript" src="SortingBarChart.js">  </script>
+
+
+	</body>
+</html>
